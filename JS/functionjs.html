@@ -132,7 +132,20 @@
 
     userData();
 
-    //Local storage-
+    //Local storage- js localscript is a feature that enables developers to store 
+    //key-value data pairs persistently within the user's browser, with no expiration date.
+     let userInfo={
+        name:"John",
+        age:23,
+        mob:9797979797,
+        email:"guptaanshika231@gmail.com",
+     }
+     //convert JSON object to string
+     localStorage.setItem('perference',JSON .stringify(userInfo));
+
+     //Retrieve the string and parse it back into object
+     let storagePerference=JSON.parse(localStorage.getItem('perference'));
+     console.log(storagePerference.name);
 
 
     </script>
